@@ -126,6 +126,10 @@ while not game_over:
 			if event.key == pygame.K_DOWN:
 				if y1 <= height - SENSITIVITY - PLAYER_LENGTH:
 					y1 += SENSITIVITY
+					
+			if event.key == pygame.K_r:
+				ball_pos = [(width - BALL_SIZE)/2, (height- BALL_SIZE)/2]
+				ball_direction = random.uniform(-math.pi, math.pi)
 
 			player1_pos[1] = y1
 
